@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="./css/color-1.css">
+    <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled>
+</head>
+<body class="product-registration-page">
+
+    <!-- Page Loader -->
+    <div class="page-loader js-page-loader">
+        <div></div>
+     </div>
+    <!-- !Page Loader -->
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <img src="./imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
+                        <a href="#"><span>Paw</span>Palandia</a>
+                    </div>
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="header-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">inicio</a></li>
+                            <li class="menu-item"><a href="#about-us">Sobre Nosotros</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Productos y servicios <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="courses.html">Productos</a></li>
+                                    <li class="sub-menu-item"><a href="course-details.html">Servicios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Iniciar Sesión / Registrarse <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                    <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="contact.html">contacto</a></li>
+
+                            <!-- Search Bar? -->
+                            <!-- TBF -->
+                            <!-- TBF -->
+                            <!-- TBF -->
+                            <!-- !Search Bar? -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         </header>
+        <!-- !Header -->
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-nav">
+            <div class="container">
+                <nav aria-label="bradcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    </ol>
+                </nav>
+            </div>
+         </div>
+        <!-- !Breadcrumb -->
+
+        <!-- Contact Section -->
+         <section class="contact-section section-padding">
+            <!-- Bubble Animation -->
+            <div class="bubble-animation">
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+             </div>
+            <!-- !Bubble Animation -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="contact-form box">
+                            <h2 class="form-title text-center">Registro de producto</h2>
+                            <div id="errorMessage" style="color: crimson;"></div>
+                            <form action="#" id="productRegistrationForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="productName" placeholder="Nombre de producto" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="productImage" placeholder="Imagen" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="productDescription" placeholder="Descripción" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-block btn-theme btn-form">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- !Contact Section -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>paw</span>palandia</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f social-icon"></i> Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter social-icon"></i> Twitter</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram social-icon"></i> Instagram</a></li>
+                                    <li><a href="#"><i class="fab fa-youtube social-icon"></i> YouTube</a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin social-icon"></i> LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Club PawPal</h3>
+                                <ul>
+                                    <li><a href="#">Iniciar Sesión</a></li>
+                                    <li><a href="#">Crear Cuenta</a></li>
+                                    <li><a href="#">¿Qué es Club PawPal?</a></li>
+                                    <li><a href="#">Suscripciones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Servicios para Mascotas</h3>
+                                <ul>
+                                    <li><a href="#">Entrenamiento Canino</a></li>
+                                    <li><a href="#">Estética Canina</a></li>
+                                    <li><a href="#">Servicios Veterinarios</a></li>
+                                    <li><a href="#">Adopciones</a></li>
+                                    <li><a href="#">Cremaciones</a></li>
+                                    <li><a href="#">Blog PawPalandia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>paw</span>palandia</h3>
+                                <ul>
+                                    <h3>Suscríbete</h3>
+                                    <li><a href="#">Recibe nuestro newsletter y recibe promociones</a></li>
+                                    <li><a href="#">Atención: Lunes a domingo de 7:00 a 0:00</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Categorías</h3>
+                                <ul>
+                                    <li><a href="#">Cachorros</a></li>
+                                    <li><a href="#">Perro Senior</a></li>
+                                    <li><a href="#">Gatos</a></li>
+                                    <li><a href="#">Salud e Higiene</a></li>
+                                    <li><a href="#">Promociones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Enlaces de interés</h3>
+                                <ul>
+                                    <li><a href="#">Aviso de privacidad</a></li>
+                                    <li><a href="#">Términos y condiciones</a></li>
+                                    <li><a href="#">Políticas de envío</a></li>
+                                    <li><a href="#">Facturación</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="m-0 py-4 text-center">Copyright &copy;2024 PAWPALANDIA</p>
+                </div>
+            </div>
+         </footer>
+        <!-- !Footer -->
+    </div>
+    <!-- !Main Wrapper -->
+
+
+    <!-- Style Switcher -->
+    <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Style Switcher</h3>
+        <div class="style-switcher-item">
+            <p class="mb-2">Theme Colors</p>
+            <!-- Theme Colors -->
+             <div class="theme-colors js-theme-colors">
+                <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+                <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+                <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+                <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+                <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+             </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
+                <label for="dark-mode" class="form-check-label">Dark Mode</label>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
+                <label for="glass-effect" class="form-check-label">Glass Effect</label>
+            </div>
+        </div>
+     </div>
+    <!-- !Style Switcher -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

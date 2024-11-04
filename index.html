@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="./css/color-1.css">
+    <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled>
+</head>
+<body>
+    <!-- Page Loader -->
+     <div class="page-loader js-page-loader">
+        <div></div>
+     </div>
+    <!-- !Page Loader -->
+
+
+    <!-- Main Wrapper -->
+     <div class="main-wrapper">
+        <!-- Header -->
+         <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <img src="./imgs/Logo.png" alt="Logo de PawPalandia" style="height: 70px;">
+                        <a href="#"><span>Paw</span>Palandia</a>
+                    </div>
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="header-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">inicio</a></li>
+                            <li class="menu-item"><a href="#about-us">Sobre Nosotros</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Productos y servicios <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="courses.html">Productos</a></li>
+                                    <li class="sub-menu-item"><a href="course-details.html">Servicios</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">Iniciar Sesión / Registrarse <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                    <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="contact.html">contacto</a></li>
+
+                            <!-- Search Bar? -->
+                            <!-- TBF -->
+                            <!-- TBF -->
+                            <!-- TBF -->
+                            <!-- !Search Bar? -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         </header>
+        <!-- !Header -->
+
+        <!-- Banner -->
+         <section class="banner-section d-flex align-items-center position-relative">
+            <!-- Bubble Animation -->
+             <div class="bubble-animation">
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+                <div class="bubble-animation-item"></div>
+             </div>
+            <!-- !Bubble Animation -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="banner-text">
+                            <h2 class="mb-3">Una inversión para tu mejor amigo.</h2>
+                            <h1 class="mb-3 text-capitalize">Your pet's perfect match, delivered!</h1>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+                            <button type="button" onclick="scrollToElement()" class="btn btn-theme">Conoce
+                                PawPalandia</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-first order-md-last mb-5 mb-md-0">
+                        <div class="banner-img">
+                            <div class="circular-img">
+                                <div class="circular-img-inner">
+                                    <div class="circular-img-circle"></div>
+                                    <img src="imgs/girl_with_pet.png" alt="banner img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- !Banner -->
+
+        <!-- Fun Facts -->
+         <section class="fun-facts-section">
+            <div class="container">
+                <div class="box py-2">
+                    <div class="row text-center">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-1">800k</h2>
+                                <p>Clientes</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-2">500+</h2>
+                                <p>Productos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-3">50+</h2>
+                                <p>Países</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="fun-facts-item">
+                                <h2 class="style-4">1000+</h2>
+                                <p>Mascotas contentas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- !Fun Facts -->
+
+        <!-- Courses -->
+         <!-- <section class="courses-section section-padding" id="about-us">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-title text-center">
+                            <h2 class="title">Misión, Visión y Valores</h2>
+                            <p class="sub-title">Nuestro propósito</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> -->
+
+                    <!-- Courses Item -->
+                     <!-- <div class="col-md-6 col-lg-3">
+                        <div class="courses-item">
+                            <a href="course-details.html" class="link">
+                                <div class="courses-item-inner">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1521316730702-829a8e30dfd0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="course img">
+                                    </div>
+                                    <h3 class="title">Blah blah blah</h3>
+                                    <div class="instructor"> -->
+                                        <!-- <img src="imgs/guy.png" alt="instructor img"> -->
+                                        <!-- <span class="instructor-name">"We are the coolest, and you aren't lmao"</span>
+                                    </div> -->
+                                    <!-- <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                        <span class="reviews">(230)</span>
+                                    </div> -->
+                                    <!-- <div class="price">Misión</div>
+                                </div>
+                            </a>
+                        </div>
+                     </div> -->
+                    <!-- !Courses Item -->
+
+                    <!-- Courses Item -->
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <div class="courses-item">
+                            <a href="course-details.html" class="link">
+                                <div class="courses-item-inner">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="course img">
+                                    </div>
+                                    <h3 class="title">Blah Blah Blah</h3>
+                                    <div class="instructor"> -->
+                                        <!-- <img src="imgs/guy.png" alt="instructor img"> -->
+                                        <!-- <span class="instructor-name">"Lol, we can see and you can't lol"</span>
+                                    </div> -->
+                                    <!-- <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                        <span class="reviews">(230)</span>
+                                    </div> -->
+                                    <!-- <div class="price">Visión</div>
+                                </div>
+                            </a>
+                        </div>
+                     </div> -->
+                    <!-- !Courses Item -->
+
+                    <!-- Courses Item -->
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <div class="courses-item">
+                            <a href="course-details.html" class="link">
+                                <div class="courses-item-inner">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1609348955382-71d6d3036160?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="course img">
+                                    </div>
+                                    <h3 class="title">Blah Blah Blah</h3>
+                                    <div class="instructor"> -->
+                                        <!-- <img src="imgs/guy.png" alt="instructor img"> -->
+                                        <!-- <span class="instructor-name">"We don't approve of multitasking. Leave us alone."</span>
+                                    </div> -->
+                                    <!-- <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                        <span class="reviews">(230)</span>
+                                    </div> -->
+                                    <!-- <div class="price">Valores</div>
+                                </div>
+                            </a>
+                        </div>
+                     </div> -->
+                    <!-- !Courses Item -->
+
+                    <!-- Courses Item -->
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <div class="courses-item">
+                            <a href="course-details.html" class="link">
+                                <div class="courses-item-inner">
+                                    <div class="img-box">
+                                        <img src="https://images.unsplash.com/photo-1656234948440-1e9bdcdc8fa6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="course img">
+                                    </div>
+                                    <h3 class="title">Blah Blah Blah</h3>
+                                    <div class="instructor"> -->
+                                        <!-- <img src="imgs/guy.png" alt="instructor img"> -->
+                                        <!-- <span class="instructor-name">"A long time ago... but it was actually last week, so..."</span>
+                                    </div> -->
+                                    <!-- <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                        <span class="reviews">(230)</span>
+                                    </div> -->
+                                    <!-- <div class="price">Historia</div>
+                                </div>
+                            </a>
+                        </div>
+                     </div> -->
+                    <!-- !Courses Item -->
+                <!-- </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <a href="courses.html" class="btn btn-theme">Ver más</a>
+                    </div>
+                </div>
+            </div>
+         </section> -->
+        <!-- !Courses -->
+
+        <!-- Testimonials -->
+        <section class="testimonials-section section-padding position-relative" id="about-us">
+            <div class="decoration-circles d-none d-lg-block">
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+            </div>
+            <div class="decoration-imgs d-none d-lg-block">
+                <img src="./imgs/member_hyan.png" alt="decoration-imgs" class="decoration-imgs-item">
+                <img src="./imgs/member_romina.jpg" alt="decoration-imgs" class="decoration-imgs-item">
+                <img src="./imgs/member_jorge.jpg" alt="decoration-imgs" class="decoration-imgs-item">
+                <img src="./imgs/member_pau.jpg" alt="decoration-imgs" class="decoration-imgs-item">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-title text-center">
+                            <h2 class="title">Conoce</h2>
+                            <p class="sub-title">A nuestro equipo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="img-box rounded-circle position-relative">
+                            <img src="./imgs/member_jorge.jpg" alt="member_jorge" class="w-100 js-testimonial-img rounded-circle">
+                        </div>
+                        <div id="carouselOne" class="carousel slide text-center" data-bs-ride="carousel">
+                            <div class="carousel-inner mb-4">
+                                <div class="carousel-item active" data-js-testimonial-img="./imgs/member_jorge.jpg"
+                                    style="width: 30">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Profesional con experiencia en desarrollo Fullstack, análisis
+                                            de datos y TI.
+                                            Además, cuenta con 6 años de trayectoria
+                                            en la producción audiovisual y creación de contenido. Ha trabajado de la
+                                            mano de grandes
+                                            empresarios como Rossana Fuentes Berain
+                                            y Gerardo López-Gallo, así como en equipo con destacados profesionistas como
+                                            Gabriela Warketing,
+                                            Mónica Garza, Alejandro Poiré, entre otros.</p>
+                                        <h3>jorge morales</h3>
+                                        <p class="text-2">Desarrollador Full-Stack & Analista de Datos</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_pau.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Combina su pasión por el bienestar animal con su experiencia
+                                            como desarrolladora
+                                            Java Full Stack. Su dedicación técnica garantiza una plataforma intuitiva y
+                                            accesible, centrada en
+                                            el bienestar de las mascotas, proporcionando una experiencia de compra ágil
+                                            y segura para los
+                                            dueños de perros y gatos en México.
+                                        </p>
+                                        <h3>Paulina Monsalvo</h3>
+                                        <p class="text-2">Co-fundadora & Desarrolladora Web Full-Stack</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_giovanni.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Cuenta con experiencia en el área industrial como ingeniero de
+                                            calidad, y con
+                                            fuerte interés en el bienestar animal. Se sumó al proyecto con la finalidad
+                                            de proporcionar una
+                                            experiencia agradable y eficaz en una plataforma, que ayudará a los dueños a
+                                            cuidar a sus mascotas
+                                            a través de productos de calidad.</p>
+                                        <h3>Giovanni Yañes</h3>
+                                        <p class="text-2">Co-fundador, Ingeniero Mecánico & Desarrollador Web Full-Stack
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_hyan.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Es una persona autodidacta y políglota, con habilidades
+                                            destacadas en el
+                                            desarrollo web y el análisis de datos. Su capacidad para resolver problemas
+                                            complejos la ha
+                                            llevado a dominar el campo de la inteligencia artificial, aplicando sus
+                                            conocimientos para crear
+                                            soluciones innovadoras en diferente entornos internacionales.</p>
+                                        <h3>Hyân Bringas</h3>
+                                        <p class="text-2">Desarrollador Java Fullstack</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_romina.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Full Stack Developer Jr., especializada en la creación de
+                                            componentes front-end
+                                            para el desarrollo de sitios web y aplicaciones. Destacada por su
+                                            adaptabilidad en entornos
+                                            desafiantes y su habilidad para colaborar eficazmente con equipos
+                                            multidisciplinarios. Posee
+                                            conocimientos sólidos en el desarrollo de componentes lógicos para el
+                                            backend, así como en el uso
+                                            de React y diversos frameworks de diseño.</p>
+                                        <h3>Romina Loyda</h3>
+                                        <p class="text-2">Desarrolladora Java Full-Stack Jr.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_juan.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Con experiencia en diseño de páginas web, instalación, pruebas
+                                            y mantenimiento de
+                                            sistemas de software. Manejo de diversas plataformas web, lenguajes de
+                                            programación y sistemas
+                                            integrados; siempre
+                                            enfocado en trabajar con las herramientas más eficientes y vanguardistas.
+                                        </p>
+                                        <h3>Juan Hernández</h3>
+                                        <p class="text-2">Desarrollador Java Fullstack Jr.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_manuel.jpg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Ingeniero en biotecnología con experiencia en
+                                            microcontroladores e ingeniería de
+                                            datos para el sector agrícola, cuenta con sólidos conocimientos de backend
+                                            para desarrollar
+                                            soluciones enfocadas en el área de las
+                                            tecnologías.
+                                        </p>
+                                        <h3>José Manuel</h3>
+                                        <p class="text-2">Desarrollador Full-Stack</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_erick.jpeg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Con experiencia en desarrollo web Full Stack y Java. Ha
+                                            completado un Diplomado en
+                                            Java Full Stack y actualmente está participando en un bootcamp enfocado en
+                                            perfeccionar sus
+                                            habilidades como desarrollador web, con el objetivo a largo plazo de
+                                            convertirse en un
+                                            desarrollador web senior.
+                                            Su enfoque está en mejorar la experiencia del usuario en plataformas web
+                                            mediante el uso de
+                                            tecnologías como HTML, CSS, JavaScript, y Bootstrap.
+                                        </p>
+                                        <h3>Erick Ortiz</h3>
+                                        <p class="text-2">Ingeniero en Sistemas Computacionales</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-testimonial-img="./imgs/member_cesar.jpeg">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Ingeniero con experiencia en el desarrollo full stack, creando
+                                            soluciones
+                                            tecnológicas innovadoras para diversas industrias que resuelvan los retos
+                                            presentes o futuros,
+                                            buscando contribuir a la sociedad y el medio ambiente.</p>
+                                        <h3>Cesar Franco</h3>
+                                        <p class="text-2">Desarrollador Java Fullstack Jr.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+                                <i class="fas fa-arrow-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !Testimonials -->
+
+        <!--Misión, visión y valores-->
+        <section id="click">
+            <section>
+                <div class="container py-5">
+                    <div class="main-timeline">
+                        <div class="timeline left">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <h3 style="text-align: end;" class="timeline-h3"> Acerca de nosotros &#x2728</h3>
+                                    <p style="text-align: justify;" class="mb-0">Somos un e-commerce especializado en
+                                        productos para mascotas, creado para superar las limitaciones de tiempo, la
+                                        falta de tiendas físicas cercanas y la dificultad para encontrar artículos
+                                        específicos. Nuestra plataforma
+                                        permite a los dueños de mascotas adquirir productos y servicios de alta calidad
+                                        desde cualquier lugar y en
+                                        cualquier momento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline right">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <h3 class="timeline-h3"> &#x2728 Misión</h3>
+                                    <p style="text-align: justify;" class="mb-0">Proporcionar productos y servicios para
+                                        el bienestar de las mascotas, de
+                                        manera conveniente y confiable. Nos esforzamos por ofrecer productos de alta
+                                        calidad, asesoramiento
+                                        personalizado y una experiencia de compra fácil y amigable, promoviendo el amor
+                                        y el cuidado responsable de los
+                                        animales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline left">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <h3 style="text-align: end;" class="timeline-h3"> Visión &#x2728</h3>
+                                    <p style="text-align: justify;" class="mb-0">Destacar por nuestra excelencia en el
+                                        servicio al cliente, la calidad de nuestros productos, y nuestro compromiso
+                                        con la salud y felicidad de cada mascota. Queremos ser un referente en cuanto a
+                                        cuidado responsable y bienestar
+                                        animal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline right">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <h3 class="timeline-h3">&#x2728 Valores</h3>
+                                    <p style="text-align: justify;" class="mb-0">🐾 Responsabilidad social 🐾 Innovación
+                                        constante 🐾 Calidad 🐾 Empatía 🐾 Seguridad en nuestros productos 🐾 Trato
+                                        personalizado 🐾 Accesibilidad 🐾 conveniencia</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Timeline 3 - Bootstrap Brain Component -->
+
+        <!-- Footer -->
+         <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>paw</span>palandia</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f social-icon"></i> Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter social-icon"></i> Twitter</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram social-icon"></i> Instagram</a></li>
+                                    <li><a href="#"><i class="fab fa-youtube social-icon"></i> YouTube</a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin social-icon"></i> LinkedIn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Club PawPal</h3>
+                                <ul>
+                                    <li><a href="#">Iniciar Sesión</a></li>
+                                    <li><a href="#">Crear Cuenta</a></li>
+                                    <li><a href="#">¿Qué es Club PawPal?</a></li>
+                                    <li><a href="#">Suscripciones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Servicios para Mascotas</h3>
+                                <ul>
+                                    <li><a href="#">Entrenamiento Canino</a></li>
+                                    <li><a href="#">Estética Canina</a></li>
+                                    <li><a href="#">Servicios Veterinarios</a></li>
+                                    <li><a href="#">Adopciones</a></li>
+                                    <li><a href="#">Cremaciones</a></li>
+                                    <li><a href="#">Blog PawPalandia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>paw</span>palandia</h3>
+                                <ul>
+                                    <h3>Suscríbete</h3>
+                                    <li><a href="#">Recibe nuestro newsletter y recibe promociones</a></li>
+                                    <li><a href="#">Atención: Lunes a domingo de 7:00 a 0:00</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Categorías</h3>
+                                <ul>
+                                    <li><a href="#">Cachorros</a></li>
+                                    <li><a href="#">Perro Senior</a></li>
+                                    <li><a href="#">Gatos</a></li>
+                                    <li><a href="#">Salud e Higiene</a></li>
+                                    <li><a href="#">Promociones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>Enlaces de interés</h3>
+                                <ul>
+                                    <li><a href="#">Aviso de privacidad</a></li>
+                                    <li><a href="#">Términos y condiciones</a></li>
+                                    <li><a href="#">Políticas de envío</a></li>
+                                    <li><a href="#">Facturación</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="m-0 py-4 text-center">Copyright &copy;2024 PAWPALANDIA</p>
+                </div>
+            </div>
+         </footer>
+        <!-- !Footer -->
+
+     </div>
+    <!-- !Main Wrapper -->
+
+    <!-- Style Switcher -->
+     <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Style Switcher</h3>
+        <div class="style-switcher-item">
+            <p class="mb-2">Theme Colors</p>
+            <!-- Theme Colors -->
+             <div class="theme-colors js-theme-colors">
+                <button type="button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+                <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+                <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+                <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+                <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+             </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-dark-mode" role="switch" id="dark-mode">
+                <label for="dark-mode" class="form-check-label">Dark Mode</label>
+            </div>
+        </div>
+        <div class="style-switcher-item">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input js-glass-effect" role="switch" id="glass-effect">
+                <label for="glass-effect" class="form-check-label">Glass Effect</label>
+            </div>
+        </div>
+     </div>
+    <!-- !Style Switcher -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
